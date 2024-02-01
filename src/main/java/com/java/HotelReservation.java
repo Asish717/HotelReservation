@@ -1,7 +1,14 @@
 package com.java;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HotelReservation {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Hotel Reservation");
+    public List<Hotel>hotels=new ArrayList<>();
+    public void addHotel(Hotel hotel) {
+        hotels.add(hotel);
+    }
+    public List<Hotel>getHotel(){
+        return hotels;
     }
 }
